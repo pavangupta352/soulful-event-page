@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live On Purpose: Aligned and Unstoppable - A free live activation event with Allison Carmany to help you remember who you are and live life fully turned on.">
+    <meta name="keywords" content="live purpose, activation, Allison Carmany, alignment, spiritual growth, purpose, free event">
+    <title>Live On Purpose | Free Alignment Activation | Allison Carmany</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for stars and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+</head>
+<body>
+
+
+    <main>
+        <!-- SECTION 1: HERO — MODERN PREMIUM DESIGN -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <div class="animated-gradient"></div>
+                <div class="particles-container" id="particles-js"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="badge-container">
+                        <span class="event-badge">FREE LIVE EVENT</span>
+                    </div>
+                    
+                    <h1><span class="heading-prefix">🔥</span> Live On Purpose: <span class="highlight-text">Aligned and Unstoppable</span></h1>
+                    
+                    <h3>A Transformational Live Activation with <span class="text-accent">Allison Carmany</span></h3>
+                    
+                    <p class="hero-description">Discover how to realign with your soul's purpose, reconnect with your inner power, and relaunch your life — fully activated and turned on.</p>
+                    
+                    <div class="event-details">
+                        <div class="event-detail-item">
+                            <div class="event-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="event-info">
+                                <span class="event-label">Date</span>
+                                <span class="event-value">June 7th, 2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="event-detail-item">
+                            <div class="event-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="event-info">
+                                <span class="event-label">Time</span>
+                                <span class="event-value">8:00 AM EST</span>
+                            </div>
+                        </div>
+                        
+                        <div class="event-detail-item">
+                            <div class="event-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="event-info">
+                                <span class="event-label">Where</span>
+                                <span class="event-value">Zoom (Link sent after registration)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#registration" class="btn-primary pulse-animation">
+                        <span class="btn-text">Reserve My Spot Now</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <p class="scarcity-notice"><i class="fas fa-user-clock"></i> Limited spots available. First come, first activated.</p>
+                </div>
+                
+                                <div class="hero-video" data-aos="fade-left" data-aos-duration="1000">
+                <div class="video-container">
+                        <div class="video-frame"></div>
+                    <video id="hero-video" autoplay muted playsinline loop>
+                            <source src="https://storage.googleapis.com/msgsndr/Kp1u1FaSlXAhxEBJpCTL/media/682733ad0e347873603f2c1f.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button-overlay" id="play-button">
+                        <div class="play-icon"></div>
+                    </div>
+                    <img src="https://cdn.eboov.com/player/web/8/video-thumbnail-volume.gif" alt="Click to turn on sound" class="sound-overlay" id="sound-button">
+                        <div class="video-reflection"></div>
+                </div>
+                    
+                    <div class="countdown-container compact-countdown" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="countdown-header">
+                            <span class="countdown-title">Event Starts In:</span>
+                            <span class="countdown-subtitle">Reserve your spot before registration closes</span>
+                        </div>
+                        
+                        <div class="countdown-timer" id="countdown">
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="days">00</div>
+                                <div class="countdown-label">Days</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="hours">00</div>
+                                <div class="countdown-label">Hours</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="minutes">00</div>
+                                <div class="countdown-label">Minutes</div>
+                            </div>
+                            <div class="countdown-separator">:</div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="seconds">00</div>
+                                <div class="countdown-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+
+        </section>
+
+        <!-- SECTION 2: WAKE-UP CALL — EMOTIONAL CONNECTION -->
+        <section class="wake-up">
+            <div class="container">
+                <div class="wake-up-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="wake-up-header">
+                        <h2>You're Not Lost. You're Just Out of Sync.</h2>
+                        <div class="accent-line"></div>
+                    </div>
+                    
+                    <div class="wake-up-intro">
+                        <p class="lead-text">Most people aren't tired because they're doing too much.</p>
+                        <p class="lead-text emphasis">They're tired because they're not doing what they're meant for.</p>
+                    </div>
+                    
+                    <div class="two-columns">
+                        <div class="column misaligned-column" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                            <div class="column-header">
+                                <span class="column-icon"><i class="fas fa-unlink"></i></span>
+                                <h4>When Misaligned</h4>
+                            </div>
+                            <p>When you live misaligned, everything feels like a struggle. Your energy drains easily, your efforts seem wasted, and you constantly wonder "is this all there is?"</p>
+                        </div>
+                        
+                        <div class="column-divider">
+                            <div class="divider-line"></div>
+                            <div class="divider-circle"><i class="fas fa-sync-alt"></i></div>
+                        </div>
+                        
+                        <div class="column aligned-column" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                            <div class="column-header">
+                                <span class="column-icon"><i class="fas fa-link"></i></span>
+                                <h4>When Soul-Aligned</h4>
+                            </div>
+                            <p>But when you're in sync with your soul…</p>
+                            <ul class="soul-benefits">
+                                <li><span class="benefit-icon">🔓</span> <span class="benefit-text">Life opens.</span></li>
+                                <li><span class="benefit-icon">🔓</span> <span class="benefit-text">Energy flows.</span></li>
+                                <li><span class="benefit-icon">🔓</span> <span class="benefit-text">Things click.</span></li>
+                </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-overlay" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>That's what <strong>Live On Purpose</strong> is here to do — reconnect you to <em>why you're really here</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: WHO IT'S FOR — CLEAR TARGETING -->
+        <section class="who-its-for">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>This Is For You If...</h2>
+                    <div class="accent-line"></div>
+                </div>
+                
+                <div class="side-by-side">
+                    <div class="checklist-container" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="checklist-card">
+                            <div class="checklist-items">
+                                <div class="checklist-item">
+                                    <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+                                    <p>You've outgrown the old version of your life</p>
+                                </div>
+                                
+                                <div class="checklist-item">
+                                    <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+                                    <p>You feel called to something bigger — but don't know what</p>
+                                </div>
+                                
+                                <div class="checklist-item">
+                                    <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+                                    <p>You're craving clarity, energy, and momentum</p>
+                                </div>
+                                
+                                <div class="checklist-item">
+                                    <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+                                    <p>You know it's time to stop shrinking and start <strong>living fully</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="soul-message">
+                                <div class="soul-icon"><i class="fas fa-spa"></i></div>
+                                <p>If your soul whispered <span class="highlight-text">"YES"</span>… this is for you.</p>
+                            </div>
+                            
+                            <a href="#registration" class="btn-primary pulse-animation">
+                                <span class="btn-text">I'm Ready to Join</span>
+                                <span class="btn-icon">🔥</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="illustration-container" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="image-frame">
+                            <img src="https://via.placeholder.com/500x600?text=Soul+Alignment" alt="Soul Alignment" class="floating-slow">
+                            <div class="glow-effect"></div>
+                        </div>
+                        <div class="decoration-element top-right">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="decoration-element bottom-left">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: WHY THIS IS DIFFERENT — SOULSYNC INTRO -->
+        <section class="soulsync-intro">
+            <div class="container">
+                <div class="section-header light" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="gift-badge">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h2>Plus... A Gift Like Nothing You've Seen Before</h2>
+                    <div class="accent-line"></div>
+                </div>
+                
+                <div class="soulsync-container">
+                    <div class="soulsync-content" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="intro-highlight">
+                            <h3>At the end of this experience, you'll unlock access to <span class="text-gradient">SoulSync AI™</span></h3>
+                        </div>
+                        
+                        <p class="soulsync-description">A next-gen astrological engine powered by:</p>
+                        
+                        <div class="power-features">
+                            <div class="feature-card">
+                                <div class="feature-icon cosmos">
+                                    <i class="fas fa-universe">🌌</i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Ancient Wisdom</h4>
+                                    <p>2,000+ years of astrological knowledge</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon tech">
+                                    <i class="fas fa-microchip">💻</i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Computational Power</h4>
+                                    <p>1.5 million+ real-time planetary calculations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon ai">
+                                    <i class="fas fa-brain">🤖</i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>AI Intelligence</h4>
+                                    <p>Trained on astrology, psychology & energetic timing</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="soulsync-highlight">
+                            <p>This isn't a horoscope. It's a <em>soul map</em> — built for your exact energy.</p>
+                </div>
+                
+                        <div class="benefit-points">
+                <div class="benefit-item">
+                                <div class="benefit-marker">
+                                    <i class="fas fa-bullseye">🎯</i>
+                                </div>
+                                <p>A few attendees will receive their report <strong>live during the event</strong></p>
+                </div>
+                
+                <div class="benefit-item">
+                                <div class="benefit-marker">
+                                    <i class="fas fa-gift">🎁</i>
+                                </div>
+                                <p>Everyone who stays until the end gets access to <strong>their full personalized report — free</strong></p>
+                            </div>
+                        </div>
+                </div>
+                
+                    <div class="soulsync-image" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="image-container">
+                            <div class="image-decoration top-left"></div>
+                            <div class="image-decoration bottom-right"></div>
+                            <img src="https://via.placeholder.com/500x600?text=SoulSync+AI+Report" alt="SoulSync AI Report Preview" class="floating">
+                            <div class="image-badge">
+                                <span>Free Gift</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: THE PROMISE — TRANSFORMATIONAL OUTCOMES -->
+        <section class="promise dark-theme">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>What You'll Walk Away With:</h2>
+                    <div class="accent-line"></div>
+                    <p class="section-subtitle">Tangible transformations that last far beyond the event</p>
+                </div>
+                
+                <div class="icon-grid">
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Clarity</h4>
+                        <p>The ability to move forward without overthinking every decision</p>
+                    </div>
+                    
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Confidence</h4>
+                        <p>That comes from full-body alignment with your true purpose</p>
+                    </div>
+                    
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Release</h4>
+                        <p>Of old energy that's been weighing you down for too long</p>
+                    </div>
+                    
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h4>Direction</h4>
+                        <p>Tools to stay focused, magnetic, and on-purpose every day</p>
+                    </div>
+                    
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Elevation</h4>
+                        <p>A new standard for how you live, love, lead, and create</p>
+                    </div>
+                    
+                    <div class="icon-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Connection</h4>
+                        <p>Deeper resonance with yourself and alignment with your soul's calling</p>
+                    </div>
+                </div>
+                
+                <div class="quote-overlay" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">
+                    <div class="quote-icon"><i class="fas fa-fire"></i></div>
+                    <p>🔥 This isn't motivation. This is <em>realignment</em> — and it will change your life.</p>
+                </div>
+                
+                <div class="cta-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                    <a href="#registration" class="btn-primary pulse-animation">
+                        <span class="btn-text">Reserve My Spot Now</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: EVENT AGENDA — BREAKDOWN OF THE VALUE -->
+        <section class="event-agenda light-theme">
+            <div class="container">
+                <div class="section-header light" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>The Journey <span class="text-accent">You'll Experience</span></h2>
+                    <div class="accent-line"></div>
+                    <p class="section-subtitle">A carefully crafted path to transformation</p>
+                </div>
+                
+                <div class="journey-container">
+                    <div class="journey-intro" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="circle-decoration"></div>
+                        <p>Each step of this experience has been intentionally designed to help you reconnect with your inner wisdom and unlock your fullest potential.</p>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                            <div class="timeline-number">01</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-sparkles"></i>
+                                </div>
+                                <div class="timeline-text">
+                                    <h4>Welcome Activation</h4>
+                                    <p>Allison opens the space and guides you through a powerful live energetic activation to clear energetic blocks and elevate your vibration. You'll feel the shift immediately.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                            <div class="timeline-number">02</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="timeline-text">
+                                    <h4>The Alignment Process</h4>
+                                    <p>Experience a guided practice designed to reconnect you with your soul's purpose, realign your energetic field, and create sacred space for clarity to emerge. This is where transformation begins.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                            <div class="timeline-number">03</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="timeline-text">
+                                    <h4>Live Coaching + Energy Transmissions</h4>
+                                    <p>Allison shares real-time intuitive insights with the group and selects attendees for personalized energy shifts live on camera. Many participants report feeling these transmissions even through the screen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                            <div class="timeline-number">04</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <div class="timeline-text">
+                                    <h4>The SoulSync Reveal</h4>
+                                    <p>Witness the unveiling of the powerful SoulSync AI™ system as Allison surprises select attendees with live personalized readings from their soul blueprint report – fascinating and often eerily accurate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+                            <div class="timeline-number">05</div>
+                            <div class="timeline-content">
+                                <div class="timeline-icon">
+                                    <i class="fas fa-unlock-alt"></i>
+                                </div>
+                                <div class="timeline-text">
+                                    <h4>Your Full Report — Unlocked</h4>
+                                    <p>Stay with us until the end, and receive your own complete personalized SoulSync AI™ report — our gift to you (100% free) as a thank-you for your presence and commitment to your evolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bonus-callout" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                        <div class="bonus-content">
+                            <div class="bonus-icon"><i class="fas fa-gift"></i></div>
+                            <div class="bonus-text">
+                                <h4>BONUS SURPRISES</h4>
+                                <p>Throughout our time together, Allison will be giving away exclusive resources, spiritual upgrades, and momentum tools you can't get anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="path-decoration left"></div>
+            <div class="path-decoration right"></div>
+        </section>
+
+        <!-- SECTION 7: SOCIAL PROOF — REAL RESULTS -->
+        <section class="social-proof">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="1000">What Attendees Say:</h2>
+                
+                <div class="testimonial-carousel" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="testimonial-container" id="testimonials">
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">"I cried. I felt seen — like my soul wrote it. The timing revelations were so accurate that I called my sister and read it to her. She was in tears too."</p>
+                                <p class="testimonial-author">— Tasha L.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">"The shift was instant. Like I reconnected with my true self. I've been to plenty of webinars but nothing like this. It felt like actual energy work happening through the screen."</p>
+                                <p class="testimonial-author">— Eli S.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">"The report told me the exact day things shifted — and it was spot on. That was the day I met my partner AND got offered the job I have now. How did it know??"</p>
+                                <p class="testimonial-author">— Kara D.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <div class="carousel-control" id="prev-testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="carousel-control" id="next-testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-dots" id="testimonial-dots">
+                        <div class="carousel-dot active"></div>
+                        <div class="carousel-dot"></div>
+                        <div class="carousel-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="faq-question">
+                            <h4>Do I need to prepare anything before the event?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No special preparation is needed! Just come with an open mind and heart. We recommend finding a quiet space where you won't be interrupted during the event, and having water nearby.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="faq-question">
+                            <h4>Will the event be recorded?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This is a live-only experience. The SoulSync AI™ report is only unlocked for live attendees. The energetic activations work most powerfully in real-time, which is why we don't provide recordings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="faq-question">
+                            <h4>What information do I need for my SoulSync AI™ report?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You'll only need your name, email, and phone number to register. During the event, we'll explain how to access your full SoulSync AI™ report, which may require additional information like your birth date.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="faq-question">
+                            <h4>Is this event really free?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! The entire event is 100% free, including your SoulSync AI™ report. We believe in giving value first. There will be optional premium offerings mentioned at the end of the event for those who want to go deeper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: MEET THE CREATORS — STORY + INTEGRITY -->
+        <section class="meet-creators">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-duration="1000">The Soul Behind SoulSync</h2>
+                
+                <div class="creator-container">
+                    <div class="creator-content" data-aos="fade-right" data-aos-duration="1000">
+                        <p>Created by psychic medium Allison Carmany and technologist Pavan Gupta, SoulSync was born from one question:</p>
+                        
+                        <p><em>"What if we could map the exact moments your soul is meant to evolve — and help you prepare for them?"</em></p>
+                        
+                        <p>With 50,000+ reading requests and a team of engineers from Amazon and IIT, we didn't build this to sell reports.</p>
+                        <p>We built it to help you remember who you are — and what you came here to do.</p>
+                    </div>
+                    
+                    <div class="team-image" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="https://via.placeholder.com/500x350?text=Team+Photo" alt="Allison Carmany and Team" class="floating">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: FINAL CTA — HIGH ENERGY WRAP-UP -->
+        <section class="final-cta" id="registration">
+            <div class="container">
+                <div class="final-cta-content" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>🔥 It's Time to Remember Who You Are</h2>
+                    <p>One decision. One moment. One event.</p>
+                    <p>That's all it takes to activate your next chapter.</p>
+                    <p>Let this be the moment everything changes.</p>
+                    
+                    <div class="form-container" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                        <h3>Register for the Free Live Event</h3>
+                    
+                    <form id="report-form">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <div class="phone-input-container">
+                                        <select id="country-code" name="country-code">
+                                            <option value="+1" selected>+1 (US)</option>
+                                            <option value="+93">+93 (Afghanistan)</option>
+                                            <option value="+355">+355 (Albania)</option>
+                                                <!-- Additional country codes -->
+                                        </select>
+                                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="marketing-consent" name="marketing-consent" required>
+                            <label for="marketing-consent">I consent to receive marketing communications via email, calls, and SMS. You can unsubscribe at any time.</label>
+                        </div>
+                        
+                            <button type="submit" class="btn-primary pulse-animation">Yes — I'm Ready to Live On Purpose 🔮</button>
+                    </form>
+                        
+                        <p><small>💜 No replays. No fluff. Just alignment.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER: REMINDER BAR -->
+        <section class="reminder-bar">
+            <div class="container">
+                <div class="reminder-items">
+                    <div class="reminder-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Free Event</span>
+                    </div>
+                    <div class="reminder-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Your Data Is Safe & Sacred</span>
+                    </div>
+                    <div class="reminder-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No Credit Card Required</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://storage.googleapis.com/msgsndr/Kp1u1FaSlXAhxEBJpCTL/media/66aab355a2923188d3763c34.png" alt="Soulful Evolution Logo">
+            </div>
+            <p>&copy; 2025 Soulful Evolution. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <p class="disclaimer">This site is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way.</p>
+        </div>
+    </footer>
+
+    <!-- Success Popup Modal -->
+    <div id="success-popup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="close-popup" class="close-popup">&times;</button>
+            <div class="popup-header">
+                <h3>✅ You're In!</h3>
+            </div>
+            <div class="popup-body">
+                <p class="popup-emphasis">You're successfully registered for Live On Purpose!</p>
+                <p>Check your email for confirmation and your Zoom link.</p>
+
+                <div class="popup-section">
+                    <h4>What you'll receive:</h4>
+                    <ul class="popup-benefits">
+                        <li>📅 Zoom link and calendar invite for June 7th, 2025 at 8 AM EST</li>
+                        <li>🔔 Event reminder emails</li>
+                        <li>🎁 Access to the SoulSync AI™ bonus</li>
+                        <li>📱 Text reminders (optional)</li>
+                    </ul>
+                    <p>Check your inbox (and spam folder) for all details.</p>
+                </div>
+
+                <div class="popup-section">
+                    <h4>Make sure you add this to your calendar:</h4>
+                    <div class="button-container">
+                        <a href="#" class="popup-button" target="_blank">Add to Google Calendar</a>
+                        <a href="#" class="popup-button" target="_blank">Add to Apple Calendar</a>
+                        <a href="#" class="popup-button" target="_blank">Add to Outlook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <div class="sticky-cta-content">
+            <div class="sticky-title">Join us on June 7th, 2025 at 8 AM EST</div>
+            <a href="#registration" class="btn-primary">Reserve My Spot Now</a>
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+    <div class="chat-button" id="chat-button">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chat-modal">
+        <div class="chat-header">
+            <h4>Questions? We're here to help!</h4>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">
+                    <p>Hi there! 👋 Have questions about the Live On Purpose event?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Type your message...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize particles.js
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 50,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#7C4DFF"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 0.5,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 2,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#7C4DFF",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 0.8
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+    </script>
+</body>
+</html> 
