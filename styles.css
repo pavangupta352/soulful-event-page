@@ -3420,11 +3420,11 @@ input.valid {
     border-radius: var(--border-radius-lg);
 }
 
-/* Sacred Mission Section */
+/* Sacred Mission Section - Redesigned for Better Structure */
 .sacred-mission {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
     color: var(--light-text);
-    padding: 6rem 0;
+    padding: 4rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -3441,119 +3441,129 @@ input.valid {
 }
 
 .mission-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
     align-items: center;
-    gap: 4rem;
-    flex-wrap: wrap;
 }
 
 .mission-content {
-    flex: 1;
-    min-width: 300px;
+    z-index: 2;
+    position: relative;
 }
 
 .mission-content h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(120deg, var(--light-text), var(--accent-light));
+    background: linear-gradient(120deg, #ffffff 0%, #e0e0e0 50%, #ffffff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .mission-intro {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: var(--accent-light);
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-family: var(--heading-font);
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+.mission-intro br {
+    margin-bottom: 0.3rem;
+}
+
+.mission-content > p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
 .mission-points {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin: 2.5rem 0;
+    gap: 1rem;
+    margin: 1.5rem 0;
 }
 
 .mission-point {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    padding: 1.2rem;
-    background: rgba(124, 77, 255, 0.05);
-    border-radius: var(--border-radius);
-    border-left: 3px solid var(--accent-color);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(124, 77, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .mission-point:hover {
     background: rgba(124, 77, 255, 0.1);
-    transform: translateX(5px);
+    transform: translateX(10px);
+    border-color: rgba(124, 77, 255, 0.4);
 }
 
 .point-icon {
     font-size: 1.5rem;
-    line-height: 1;
     flex-shrink: 0;
     margin-top: 0.2rem;
 }
 
 .mission-point p {
     margin: 0;
-    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
 .mission-story {
-    font-size: 1.2rem;
-    color: var(--subtle-text);
-    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
+    margin: 1.5rem 0;
+    font-style: italic;
 }
 
 .mission-why {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: var(--border-radius);
-    padding: 1.8rem;
-    margin: 2rem 0;
-    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    background: rgba(124, 77, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(124, 77, 255, 0.3);
+    margin: 1.5rem 0;
+    text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .mission-why::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(124, 77, 255, 0.1), transparent);
-    border-radius: var(--border-radius);
-    pointer-events: none;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmerMission 3s infinite;
 }
 
 .mission-why p {
     margin: 0;
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-style: italic;
-    color: var(--accent-light);
-    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4;
     position: relative;
     z-index: 1;
 }
 
 .mission-conclusion {
-    background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(124, 77, 255, 0.05));
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    margin-top: 2.5rem;
+    background: linear-gradient(135deg, rgba(124, 77, 255, 0.15), rgba(124, 77, 255, 0.05));
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(124, 77, 255, 0.3);
     text-align: center;
     position: relative;
+    margin-top: 1.5rem;
     overflow: hidden;
 }
 
@@ -3564,66 +3574,57 @@ input.valid {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(124, 77, 255, 0.1), transparent);
-    animation: shimmerMission 6s infinite linear;
+    background: radial-gradient(circle, rgba(124, 77, 255, 0.1) 0%, transparent 50%);
+    animation: shimmerMission 4s infinite linear;
     pointer-events: none;
-}
-
-@keyframes shimmerMission {
-    0% { transform: translateX(-30%) rotate(30deg); }
-    100% { transform: translateX(30%) rotate(30deg); }
 }
 
 .mission-conclusion p {
     margin: 0;
-    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     position: relative;
     z-index: 1;
 }
 
 .mission-visual {
-    flex: 1;
-    min-width: 300px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .tech-visualization {
     position: relative;
-    max-width: 500px;
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
 }
 
 .code-snippet {
-    background: #1a1a1a;
-    border-radius: var(--border-radius-lg);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(124, 77, 255, 0.2);
+    background: #1e1e1e;
+    border-radius: 12px;
     overflow: hidden;
-    position: relative;
-    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(124, 77, 255, 0.3);
 }
 
 .code-header {
-    background: #2d2d2d;
-    padding: 1rem 1.5rem;
+    background: #2d2d30;
+    padding: 0.8rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+    border-bottom: 1px solid rgba(124, 77, 255, 0.2);
 }
 
 .code-dots {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .code-dots span {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #555;
 }
 
 .code-dots span:nth-child(1) { background: #ff5f57; }
@@ -3631,17 +3632,17 @@ input.valid {
 .code-dots span:nth-child(3) { background: #28ca42; }
 
 .code-title {
-    color: var(--subtle-text);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
     font-weight: 500;
 }
 
 .code-content {
-    padding: 2rem 1.5rem;
+    padding: 1.2rem;
     font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #e6e6e6;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #d4d4d4;
 }
 
 .code-comment { color: #6a9955; }
@@ -3664,66 +3665,74 @@ input.valid {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: var(--accent-light);
+    background: rgba(124, 77, 255, 0.8);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-color);
-    animation: twinkle 3s infinite ease-in-out;
+    animation: twinkle 2s infinite ease-in-out;
 }
 
 .star:nth-child(1) {
     top: 20%;
-    left: 15%;
+    left: 10%;
     animation-delay: 0s;
 }
 
 .star:nth-child(2) {
     top: 60%;
-    left: 80%;
-    animation-delay: 1s;
+    left: 85%;
+    animation-delay: 0.5s;
 }
 
 .star:nth-child(3) {
     top: 30%;
-    right: 10%;
-    animation-delay: 2s;
+    left: 70%;
+    animation-delay: 1s;
 }
 
 .star:nth-child(4) {
-    bottom: 40%;
-    left: 25%;
+    top: 80%;
+    left: 20%;
     animation-delay: 1.5s;
 }
 
 .star:nth-child(5) {
-    bottom: 20%;
-    right: 30%;
-    animation-delay: 0.5s;
+    top: 10%;
+    left: 50%;
+    animation-delay: 2s;
 }
 
 @keyframes twinkle {
-    0%, 100% { opacity: 0.3; transform: scale(1); }
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
     50% { opacity: 1; transform: scale(1.2); }
 }
 
-/* Responsive adjustments for Sacred Mission */
+@keyframes shimmerMission {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
 @media (max-width: 992px) {
     .mission-container {
-        flex-direction: column;
-        gap: 3rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
     
     .mission-content h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     
     .mission-intro {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .tech-visualization {
+        width: 350px;
     }
 }
 
 @media (max-width: 768px) {
     .sacred-mission {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
     
     .mission-content h2 {
@@ -3731,19 +3740,23 @@ input.valid {
     }
     
     .mission-intro {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
     
     .mission-point {
-        padding: 1rem;
+        padding: 0.8rem;
     }
     
     .mission-point:hover {
-        transform: translateX(3px);
+        transform: translateY(-5px);
+    }
+    
+    .tech-visualization {
+        width: 300px;
     }
     
     .code-content {
         font-size: 0.8rem;
-        padding: 1.5rem 1rem;
+        padding: 1rem;
     }
 }
