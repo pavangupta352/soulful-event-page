@@ -3419,3 +3419,331 @@ input.valid {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--border-radius-lg);
 }
+
+/* Sacred Mission Section */
+.sacred-mission {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: var(--light-text);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sacred-mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(124, 77, 255, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
+    pointer-events: none;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.mission-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mission-content h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(120deg, var(--light-text), var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.mission-intro {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--accent-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-family: var(--heading-font);
+}
+
+.mission-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.mission-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.2rem;
+    background: rgba(124, 77, 255, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.mission-point:hover {
+    background: rgba(124, 77, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.point-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.mission-point p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.mission-story {
+    font-size: 1.2rem;
+    color: var(--subtle-text);
+    margin: 2rem 0;
+    line-height: 1.7;
+}
+
+.mission-why {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+    padding: 1.8rem;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-color);
+    position: relative;
+}
+
+.mission-why::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(124, 77, 255, 0.1), transparent);
+    border-radius: var(--border-radius);
+    pointer-events: none;
+}
+
+.mission-why p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--accent-light);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.mission-conclusion {
+    background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(124, 77, 255, 0.05));
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-conclusion::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(124, 77, 255, 0.1), transparent);
+    animation: shimmerMission 6s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes shimmerMission {
+    0% { transform: translateX(-30%) rotate(30deg); }
+    100% { transform: translateX(30%) rotate(30deg); }
+}
+
+.mission-conclusion p {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.mission-visual {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-visualization {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.code-snippet {
+    background: #1a1a1a;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(124, 77, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.code-header {
+    background: #2d2d2d;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.code-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.code-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.code-dots span:nth-child(1) { background: #ff5f57; }
+.code-dots span:nth-child(2) { background: #ffbd2e; }
+.code-dots span:nth-child(3) { background: #28ca42; }
+
+.code-title {
+    color: var(--subtle-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.code-content {
+    padding: 2rem 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #e6e6e6;
+}
+
+.code-comment { color: #6a9955; }
+.code-function { color: #dcdcaa; }
+.code-param { color: #9cdcfe; }
+.code-variable { color: #569cd6; }
+.code-keyword { color: #c586c0; }
+
+.cosmic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-light);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-color);
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+.star:nth-child(1) {
+    top: 20%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.star:nth-child(3) {
+    top: 30%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.star:nth-child(4) {
+    bottom: 40%;
+    left: 25%;
+    animation-delay: 1.5s;
+}
+
+.star:nth-child(5) {
+    bottom: 20%;
+    right: 30%;
+    animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive adjustments for Sacred Mission */
+@media (max-width: 992px) {
+    .mission-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .mission-content h2 {
+        font-size: 2.4rem;
+    }
+    
+    .mission-intro {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sacred-mission {
+        padding: 4rem 0;
+    }
+    
+    .mission-content h2 {
+        font-size: 2rem;
+    }
+    
+    .mission-intro {
+        font-size: 1.1rem;
+    }
+    
+    .mission-point {
+        padding: 1rem;
+    }
+    
+    .mission-point:hover {
+        transform: translateX(3px);
+    }
+    
+    .code-content {
+        font-size: 0.8rem;
+        padding: 1.5rem 1rem;
+    }
+}
