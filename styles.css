@@ -2838,6 +2838,12 @@ footer {
     overflow: hidden;
 }
 
+/* White theme version */
+.faq-section.white-theme {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    color: var(--dark-text);
+}
+
 .faq-section::before {
     content: '';
     position: absolute;
@@ -2849,10 +2855,19 @@ footer {
     opacity: 0.5;
 }
 
+.faq-section.white-theme::before {
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    opacity: 0.3;
+}
+
 .faq-section h2 {
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
+}
+
+.faq-section.white-theme h2 {
+    color: var(--dark-text);
 }
 
 .faq-section h2::after {
@@ -2885,15 +2900,30 @@ footer {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* White theme FAQ items */
+.faq-section.white-theme .faq-item {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(124, 77, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
 .faq-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(124, 77, 255, 0.1);
     border-color: rgba(124, 77, 255, 0.3);
 }
 
+.faq-section.white-theme .faq-item:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), 0 0 15px rgba(124, 77, 255, 0.2);
+}
+
 .faq-item.active {
     border-color: rgba(124, 77, 255, 0.5);
     background: rgba(124, 77, 255, 0.05);
+}
+
+.faq-section.white-theme .faq-item.active {
+    background: rgba(124, 77, 255, 0.08);
 }
 
 .faq-question {
@@ -2905,6 +2935,10 @@ footer {
     color: var(--light-text);
     transition: all 0.3s ease;
     position: relative;
+}
+
+.faq-section.white-theme .faq-question {
+    color: var(--dark-text);
 }
 
 .faq-question::before {
@@ -2927,12 +2961,20 @@ footer {
     background: rgba(124, 77, 255, 0.1);
 }
 
+.faq-section.white-theme .faq-question:hover {
+    background: rgba(124, 77, 255, 0.05);
+}
+
 .faq-question h4 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: 600;
     padding-right: 2rem;
     transition: color 0.3s ease;
+}
+
+.faq-section.white-theme .faq-question h4 {
+    color: var(--dark-text);
 }
 
 .faq-item.active .faq-question h4 {
@@ -2967,6 +3009,10 @@ footer {
     padding: 0 1.8rem;
     color: var(--subtle-text);
     line-height: 1.7;
+}
+
+.faq-section.white-theme .faq-answer {
+    color: #555;
 }
 
 .faq-item.active .faq-answer {
