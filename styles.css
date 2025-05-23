@@ -303,6 +303,33 @@ section {
     width: 100%;
     display: block;
     border-radius: var(--border-radius-lg);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#hero-video.loaded {
+    opacity: 1;
+}
+
+#hero-video:not(.loaded) + .play-button-overlay {
+    display: none;
+}
+
+.video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent-light);
+    font-size: 1.2rem;
+    z-index: 5;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.video-loading.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .video-reflection {

@@ -1,4 +1,57 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Video Loading Optimization
+    const heroVideo = document.getElementById('hero-video');
+    const videoLoading = document.getElementById('video-loading');
+    const videoPlayButton = document.getElementById('play-button');
+    
+    if (heroVideo && videoLoading) {
+        // Show loading indicator initially
+        videoLoading.style.display = 'block';
+        
+        // Handle video loading events
+        heroVideo.addEventListener('loadstart', function() {
+            console.log('Video loading started');
+        });
+        
+        heroVideo.addEventListener('loadeddata', function() {
+            console.log('Video data loaded');
+            // Video has loaded enough data to start playing
+            heroVideo.classList.add('loaded');
+            videoLoading.classList.add('hidden');
+            
+            // Small delay to ensure smooth transition
+            setTimeout(() => {
+                videoLoading.style.display = 'none';
+            }, 300);
+        });
+        
+        heroVideo.addEventListener('canplay', function() {
+            console.log('Video can start playing');
+            // Ensure the video is visible and controls are available
+            heroVideo.classList.add('loaded');
+            if (videoPlayButton) {
+                videoPlayButton.style.display = 'flex';
+            }
+        });
+        
+        heroVideo.addEventListener('error', function(e) {
+            console.error('Video loading error:', e);
+            videoLoading.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Video loading error';
+            videoLoading.style.color = '#ff6b6b';
+        });
+        
+        // Fallback: If video doesn't load within 10 seconds, hide loader
+        setTimeout(() => {
+            if (!heroVideo.classList.contains('loaded')) {
+                videoLoading.classList.add('hidden');
+                heroVideo.classList.add('loaded'); // Show video anyway
+                setTimeout(() => {
+                    videoLoading.style.display = 'none';
+                }, 300);
+            }
+        }, 10000);
+    }
+    
     // Initialize FAQ accordion functionality
     const faqItems = document.querySelectorAll('.faq-item');
     const faqQuestions = document.querySelectorAll('.faq-question');
